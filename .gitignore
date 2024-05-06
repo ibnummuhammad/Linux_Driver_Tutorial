@@ -10,19 +10,14 @@
 # Normal rules
 #
 .*
-*.o
 *.o.*
 *.a
 *.s
-*.ko
 *.so
 *.so.dbg
-*.mod.c
-*.mod
 *.i
 *.lst
 *.symtypes
-*.order
 modules.builtin
 *.elf
 *.bin
@@ -46,7 +41,6 @@ modules.builtin
 /System.map
 /Module.markers
 /Module.symvers
-*.symvers
 
 #
 # git files that we don't want to ignore even it they are dot-files
