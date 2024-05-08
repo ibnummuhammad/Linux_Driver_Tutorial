@@ -59,6 +59,47 @@ In this repo you can find examples for:
 35. Private Data in struct file
 36. I2C Device Driver without Device Tree 
 
+## How-to
+
+- show list of kernel modules
+~~~~~
+lsmod
+~~~~~
+
+- insert kernel modules
+~~~~~
+sudo insmod dev_nr.ko
+~~~~~
+
+- remove kernel modules
+~~~~~
+sudo rmmod dev_nr
+~~~~~
+
+- Display or control the kernel ring buffer
+~~~~~
+sudo dmesg | tail
+~~~~~
+
+- show registered device
+~~~~~
+cat /proc/devices | grep my_dev_nr
+~~~~~
+
+- create device file
+~~~~~
+sudo mknod /dev/mydevice c 64 0
+~~~~~
+
+- view dev file
+~~~~~
+ls -al /dev | grep mydevice
+~~~~~
+
+- remove dev file
+~~~~~
+sudo rm -rf /dev/mydevice
+~~~~~
 
 ## More Information
 
