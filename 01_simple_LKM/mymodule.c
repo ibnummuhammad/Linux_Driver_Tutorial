@@ -1,5 +1,4 @@
 #include <linux/module.h>
-#include <linux/init.h>
 
 /* Meta Information */
 MODULE_LICENSE("GPL");
